@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr2_task1</title>
+</head>
+<body>
+    <h1>Завдання 3</h1>
+    <fieldset style="width: 300px;">
+      <legend>Персональна інформація</legend>
+    <form action="/action_page.php">
+  <label for="fname">Name<span style="color:red">*</span></label><br>
+  <input type="text" id="fname" placeholder="your name" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+  <label for="lname">Emale<span style="color:red">*</span></label><br>
+  <input type="text" id="lname" placeholder="your emale" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+</form>
+</fieldset>
+<fieldset style="width: 300px;">
+  <legend>Додаткова інформація</legend>
+<p>Стать<span style="color:red">*</span></p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Чоловік</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Жінка</label><br>
+</form> 
+<p>Поточний статус</p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Student">
+  <label for="vehicle1"> Студент</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Worker">
+  <label for="vehicle2"> Працівник</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Nojob">
+  <label for="vehicle3"> Безробітній</label><br><br>
+</form> 
+<p>Дата народження<span style="color:red">*</span></p>
+<form>
+<input type="date" id="birthday" name="birthday">
+</form>
+<p>Навички та технології<span style="color:red">*</span></p>
+<select id="cars" name="cars" size="9" multiple>
+  <optgroup label="Tech skills">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="script">JavaScript</option>
+  <option value="asp">ASP.NET</option>
+  </optgroup>
+  <optgroup label="Soft skills">
+  <option value="soft1">Тайм-менеджмент</option>
+  <option value="soft2">Командна робота</option>
+  <option value="soft3">Лідерство</option>
+  </optgroup>
+</select>
+<p>Досвід (в роках)</p>
+<input type="number" id="quantity" name="quantity" min="0" max="25" step="0.5" value="1.5">
+років
+<p>Фотографія</p>
+<form>
+  <input type="file" id="files" name="files" multiple>
+</form>
+<p>Коментарій</p>
+<textarea name="message" rows="10" cols="30">
+</textarea>
+</fieldset>
+<button type="button" onclick="alert('Відправити?')">Відправити</button>
+<button type="button" onclick="alert('Скинути зміни?')">Скинути</button>
+</body>
+</html>
